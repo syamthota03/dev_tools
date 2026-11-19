@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Sizing and Overflow</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1,h2{
+            text-align: center;
+        }
+
+        .content-box{
+            width: 200px; 
+            padding: 20px;
+            border: 5px solid red;
+            margin: 20px;
+            box-sizing: content-box;
+            background-color: lightyellow;
+        }
+
+        .border-box{
+            width: 200px;
+            padding: 20px;
+            border: 5px solid blue;
+            margin: 20px;
+            box-sizing: border-box;
+            background-color: lightblue;
+        }
+
+        .visible{
+            width: 200px;
+            height: 50px;
+            border: 2px solid green;
+            overflow: visible;
+            margin-bottom: 50px;
+        }
+        .hidden{
+            width: 200px;
+            height: 80px;
+            border: 2px solid red;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .scroll{
+            width: 250px;
+            height: 80px;
+            border: 2px solid blue;
+            overflow: scroll;
+            margin-bottom: 20px;
+        }
+
+        .auto{
+            width: 250px;
+            height: 80px;
+            border: 2px solid purple;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Box Sizing and Overflow</h1>
+
+    <h2>Box Sizing Examples</h2>
+
+    <div class="content-box">
+        Content Box
+        <br>
+        Width = 200px
+    </div>
+
+    <div class="border-box">
+        Border Box
+        <br>
+        Width = 200px
+    </div>
+
+    <h2>Overflow Examples</h2>
+
+    <h3>Overflow Visible</h3>
+    <div class="visible">
+        This is a long paragraph.
+        The extra content will be displayed
+        outside the container.
+        CSS overflow visible example.
+    </div>
+
+    <h3>Overflow Hidden</h3>
+    <div class="hidden">
+        This is a long paragraph.
+        The extra content will be hidden
+        when it exceeds the container.
+        CSS overflow hidden example.
+    </div>
+
+    <h3>Overflow Scroll</h3>
+    <div class="scroll">
+        This is a long paragraph.
+        The extra content can be viewed
+        by scrolling inside the container.
+        CSS overflow scroll example.
+    </div>
+
+    <h3>Overflow Auto</h3>
+    <div class="auto">
+        This is a long paragraph.
+        The browser displays scrollbars
+        only when required.
+        CSS overflow auto example.
+    </div>
+
+</body>
+</html>

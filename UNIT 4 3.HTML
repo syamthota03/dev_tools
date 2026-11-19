@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Flexbox Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: lightgray;
+            height: 450px;
+            padding: 30px;
+        }
+
+        .box {
+            background-color: steelblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 125px;
+            font-size: 22px;
+        }
+
+        .box1 {
+            width: 30%;
+            order: 3;
+        }
+
+        .box2 {
+            width: 30%;
+            order: 1;
+            align-self: flex-start;
+        }
+
+        .box3 {
+            width: 38%;
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Flexbox Layout</h1>
+
+    <div class="container">
+
+        <div class="box box1">Box 1</div>
+
+        <div class="box box2">Box 2</div>
+
+        <div class="box box3">Box 3</div>
+
+    </div>
+
+</body>
+</html>

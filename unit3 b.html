@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Audio and Video</title>
+
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 640px;
+            margin: 1.5rem auto;
+            padding: 0 1rem;
+        }
+
+        audio,
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        video {
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Multimedia</h1>
+
+    <h2>Audio with fallback formats</h2>
+
+    <audio controls preload="none">
+        <source src="media/song.mp3" type="audio/mpeg">
+        <source src="media/song.ogg" type="audio/ogg">
+
+        Your browser does not support audio.
+    </audio>
+
+
+    <h2>Audio: loop + autoplay muted style options</h2>
+
+    <audio controls loop src="media/bg.mp3"></audio>
+
+
+    <h2>Video with poster and subtitles</h2>
+
+    <video controls poster="media/poster.jpg" preload="metadata">
+
+        <source src="media/clip.mp4" type="video/mp4">
+        <source src="media/clip.webm" type="video/webm">
+
+        <track 
+            kind="subtitles"
+            src="media/en.vtt"
+            srclang="en"
+            label="English"
+            default>
+
+        Your browser does not support video.
+    </video>
+
+
+    <h2>Silent looping background video</h2>
+
+    <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        src="media/loop.mp4">
+    </video>
+
+
+    <h2>Custom controls with JavaScript</h2>
+
+    <video id="v" src="media/clip.mp4"></video>
+
+    <button onclick="v.play()">Play</button>
+
+    <button onclick="v.pause()">Pause</button>
+
+    <button onclick="v.muted = !v.muted">
+        Mute / Unmute
+    </button>
+
+</body>
+
+</html>

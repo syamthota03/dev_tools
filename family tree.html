@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>My Family Tree - 7 Generations</title>
+ <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background:darkturquoise;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background:;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        nav {
+            background: #172554;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #facc15;
+        }
+        .intro {
+            text-align:center;
+            padding: 25px;
+            border-radius: 15px;
+        }
+        .intro h2 { 
+            
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+        .tree {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .generation {
+            background: white;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .generation:hover {
+            transform: translateY(-5px);
+        }
+        .generation h2 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+        .generation p {
+            margin-bottom: 15px;
+        }
+        .members {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .person {
+            background: #eff6ff;
+            border: 2px solid #93c5fd;
+            padding: 15px;
+            width: 200px;
+            border-radius: 12px;
+        }
+        .person h3 {
+            color: #1d4ed8;
+        }
+        .emoji {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        .button {
+            display: inline-block;
+            background: #1d4ed8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background: #172554;
+        }
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+            .person {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>🌳 My Family Tree</h1>
+        <p>A Journey Through 7 Generations</p>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#generation1">Gen 1</a>
+        <a href="#generation2">Gen 2</a>
+        <a href="#generation3">Gen 3</a>
+        <a href="#generation4">Gen 4</a>
+        <a href="#generation5">Gen 5</a>
+        <a href="#generation6">Gen 6</a>
+        <a href="#generation7">Gen 7</a>
+    </nav>
+    <!-- Introduction -->
+    <section id="about">
+        <h2>Welcome to My Family Tree</h2>
+        <div class="intro">
+
+        <p>
+            My family tree shows the journey of my family
+            through seven generations. Each generation has
+            its own memories, traditions and stories.
+        </p></div>
+    </section>
+    <main class="tree">
+        <!-- Generation 1 -->
+        <section class="generation" id="generation1">
+            <h2>🌿 Generation 1</h2>
+            <p>The oldest generation in my family tree.</p>
+            <div class="members">
+                <div class="person">
+                    <div class="emoji">👴</div>
+                    <h3>Great-Great-Great Grandparent</h3>
+                    <p>Name: __________</p>
+                </div>
+            </div>
+        </section>
+ <!-- Generation 2 -->
+        <section class="generation" id="generation2">
+            <h2>🌱 Generation 2</h2>
+            <p>The second generation of my family.</p>
+            <div class="members">
+                <div class="person">
+                    <div class="emoji">👵</div>
+                    <h3>Great-Great Grandparent</h3>
+                    <p>Name: __________</p>
+                </div>
+            </div>
+        </section>
+<!-- Generation 3 -->
+        <section class="generation" id="generation3">
+            <h2>🌳 Generation 3</h2>
+            <p>The third generation of my family.</p>
+            <div class="members">
+                <div class="person">
+                    <div class="emoji">👴</div>
+                    <h3>Great Grandparent</h3>
+                    <p>Name: __________</p>
+                </div>
+            </div>
+        </section>
+<!-- Generation 4 -->
+        <section class="generation" id="generation4">
+            <h2>🌳 Generation 4</h2>
+            <p>The fourth generation of my family.</p>
+            <div class="members">
+                <div class="person">
+                    <div class="emoji">👨</div>
+                    <h3>Grandparent</h3>
+                    <p>Name: __________</p>
+                </div>
+            </div>
+        </section>
+<!-- Generation 5 -->
+        <section class="generation" id="generation5">
+            <h2>🍃 Generation 5</h2>
+            <p>The fifth generation of my family.</p>
+            <div class="members">
+                <div class="person">
+                    <div class="emoji">👩</div>
+                    <h3>Parent</h3>
+                    <p>Name:</p>
+                </div>
+            </div>
+        </section>
+<!-- Generation 6 -->
+        <section class="generation" id="generation6">
+            <h2>🌿 Generation 6</h2>
+            <p>The sixth generation of my family.</p>
+            <div class="members">
+                <div class="person">
+                    <div class="emoji">👨‍👩‍👧</div>
+                    <h3>My Parents</h3>
+                    <p>Names:Subba Rao, Ratna Kumari </p>
+                </div>
+            </div>
+        </section>
+<!-- Generation 7 -->
+        <section class="generation" id="generation7">
+            <h2>🌟 Generation 7</h2>
+            <p>The youngest generation — my generation.</p>
+            <div class="members">
+                <div class="person">
+                    <div class="emoji">🧑‍🎓</div>
+                    <h3>Me</h3>
+                    <p>Name: Syam Kumar</p>
+                </div>
+                <div class="person">
+                    <div class="emoji">👦</div>
+                    <h3>My Siblings</h3>
+                    <p>Names:Lokesh</p>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Footer -->
+    <footer>
+        <h2>❤️ My Family, My Story</h2>
+        <p>Seven generations connected by love, memories and traditions.</p>
+        <p>Created by:T Syam Kumar.</p>
+    </footer>
+</body>
+</html>

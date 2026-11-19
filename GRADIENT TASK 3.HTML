@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Repeating Linear Gradient</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .box1 {
+            height: 200px;
+            background-image: linear-gradient(to right, red, yellow, green);
+        }
+
+        .box2 {
+            height: 200px;
+            background-image: repeating-linear-gradient(
+                45deg, red, yellow 10%, blue 20%
+            );
+        }
+
+        .box3 {
+            height: 200px;
+            background-image: repeating-linear-gradient(
+                90deg, blue, pink 10%, purple 20%
+            );
+        }
+
+        .box4 {
+            height: 200px;
+            background-image: repeating-linear-gradient(
+                180deg, green, orange 10%, yellow 20%
+            );
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Repeating Linear Gradient Examples</h1>
+
+    <div class="box1">
+        <h1>Linear Gradient</h1>
+    </div>
+    <br><br>
+
+    <div class="box2">
+        <h1>Repeating 45 Degree Gradient</h1>
+    </div>
+    <br><br>
+
+    <div class="box3">
+        <h1>Repeating 90 Degree Gradient</h1>
+    </div>
+    <br><br>
+
+    <div class="box4">
+        <h1>Repeating 180 Degree Gradient</h1>
+    </div>
+
+</body>
+</html>

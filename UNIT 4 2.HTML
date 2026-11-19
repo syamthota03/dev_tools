@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Specificity Demonstration</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman";
+            background-color: white;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: black;
+        }
+        p {
+            color: navy;
+            font-size: 25px;
+        }
+        .classSelector {
+            color: green;
+        }
+
+        #special.classSelector {
+            color: brown;
+        }
+        .important {
+            color: purple !important;
+        }
+        .cascade {
+            background-color: lightblue;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Specificity Demonstration</h1>
+
+    <h2>Understanding Priority</h2>
+
+    <p>
+        This paragraph uses element selector.
+    </p>
+
+    <p class="classSelector">
+        This paragraph uses class selector.
+    </p>
+
+    <p id="special" class="classSelector">
+        This paragraph uses ID and class selectors.
+    </p>
+
+    <p style="color: goldenrod;">
+        This paragraph uses inline CSS.
+    </p>
+
+    <p class="important" style="color: red;">
+        This paragraph uses !important.
+    </p>
+
+    <p class="cascade">
+        CSS Cascade Example
+    </p>
+
+</body>
+</html>
